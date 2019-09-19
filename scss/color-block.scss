@@ -1,0 +1,46 @@
+@import "./mixins.scss";
+
+.color-block {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.darkshade100 {
+  @include palette-color($darkshade100);
+}
+.darkshade75 {
+  @include palette-color($darkshade75);
+}
+.darkshade50 {
+  @include palette-color($darkshade50);
+}
+.darkshade25 {
+  @include palette-color($darkshade25);
+}
+.darkshade5 {
+  @include palette-color($darkshade5);
+}
+.purple {
+  @include palette-color($purple);
+}
+.green {
+  @include palette-color($green);
+}
+.color-block__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+}
+
+.color-block__name {
+  font-size: 19px;
+  line-height: 29px;
+  font-weight: bold;
+}
+.color-block__rgb {
+  font-size: 19px;
+  line-height: 29px;
+}
