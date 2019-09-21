@@ -2,5 +2,10 @@ mixin color-block(name, rgb)
  .color-block
      .color-block__palette&attributes(attributes)
      .color-block__text
-        .color-block__name=name
-        .color-block__rgb=rgb
+        .color-block__name= name
+        .color-block__rgb= rgb
+
+mixin text-examples__block(tagname, tag, text)
+    .text-examples__block
+        p= tagname
+        #{tag}= text

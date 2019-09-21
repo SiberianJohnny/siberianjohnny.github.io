@@ -2,10 +2,18 @@ extends ../layouts/main
 
 block content
     section.colors
-            +color-block('Dark Shade 100%', '#1F2041')(class="darkshade100")
-            +color-block('Dark Shade 75%', '#1F2041')(class="darkshade75")
-            +color-block('Dark Shade 50%', '#1F2041')(class="darkshade50")
-            +color-block('Dark Shade 25%', '#1F2041')(class="darkshade25")
-            +color-block('Dark Shade 5%', '#1F2041')(class="darkshade5")
-            +color-block('Purple', '#BC9CFF')(class="purple")
-            +color-block('Green', '#6FCF97')(class="green")
+        +color-block('Dark Shade 100%', '#1F2041')(class="darkshade100")
+        +color-block('Dark Shade 75%', '#1F2041')(class="darkshade75")
+        +color-block('Dark Shade 50%', '#1F2041')(class="darkshade50")
+        +color-block('Dark Shade 25%', '#1F2041')(class="darkshade25")
+        +color-block('Dark Shade 5%', '#1F2041')(class="darkshade5")
+        +color-block('Purple', '#BC9CFF')(class="purple")
+        +color-block('Green', '#6FCF97')(class="green")
+    section.text-examples
+        +text-examples__block('H1', 'h1', 'This one is the sub-section or widget title')
+        +text-examples__block('H2', 'h2', 'Next one is the item title inside widgets')
+        +text-examples__block('H3', 'h3', 'This is a label or cta text')
+        +text-examples__block('Body', 'p', 'This is the body text which is used for most of the design, like paragraphs, lists, etc.')
+
+
+

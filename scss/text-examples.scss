@@ -1,0 +1,23 @@
+.text-examples {
+  position: absolute;
+  width: 403px;
+  height: 321px;
+  left: 846px;
+  top: 145px;
+}
+.text-examples__block {
+  display: flex;
+  margin-bottom: 50px;
+  &:last-child {
+    margin: 0;
+  }
+}
+.text-examples__block h1, h2, h3 {
+  width: 100%;
+  margin: 0 0 0 30px;
+}
+.text-examples__block p:first-child {
+  text-align: right;
+  margin: 0;
+  color: $darkshade25;
+}
