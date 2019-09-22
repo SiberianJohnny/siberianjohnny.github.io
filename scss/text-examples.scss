@@ -9,15 +9,16 @@
   display: flex;
   margin-bottom: 50px;
   &:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
-.text-examples__block h1, h2, h3 {
+.text-examples__block p, h1, h2, h3 {
   width: 100%;
   margin: 0 0 0 30px;
-}
-.text-examples__block p:first-child {
-  text-align: right;
-  margin: 0;
-  color: $darkshade25;
+  &:first-child {
+    max-width: 37px;
+    text-align: right;
+    margin: 0;
+    color: $darkshade25;
+  }
 }
