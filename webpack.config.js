@@ -15,14 +15,17 @@ module.exports = {
             {
                 test: /\.scss$/,
                 use: [
+                    MiniCssExtractPlugin.loader,
                     {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                             publicPath: '../',
-                            hmr: process.env.NODE_ENV === 'development',
-                        }, 
+                        loader:'css-loader',
                     },
-                    'css-loader', 'sass-loader'
+                    'resolve-url-loader',
+                    {
+                        loader:'sass-loader',
+                        options: {
+                            sourceMap: true,
+                        }
+                    },
                 ],
             },
             {
@@ -35,8 +38,8 @@ module.exports = {
                   {
                     loader: 'file-loader',
                     options: {
-                      name: '[name].[ext]',
-                      outputPath: 'fonts/'
+                      name: '[path][name].[ext]',
+                      context: 'src',
                     }
                   }
                 ]

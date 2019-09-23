@@ -1,14 +1,8 @@
+@import "../scss/fonts.scss";
 @import "../modules/header/header.scss";
 @import "../scss/color-palette.scss";
 @import "../scss/color-block.scss";
 @import "../scss/colors.scss";
 @import "../scss/text-examples.scss";
 @import "../scss/mixins.scss";
-@import "../scss/fonts.scss";
-
-@font-face {
-    font-family: "Quicksand", "Montserrat";
-    src: url("./fonts/Quicksand/Quicksand-VariableFont_wght.ttf");
-    src: url("./fonts/Montserrat/Montserrat-Regular.ttf");
-    src: url("./fonts/Montserrat/Montserrat-Bold.ttf");
-}
+@import "../scss/font-styles.scss";
