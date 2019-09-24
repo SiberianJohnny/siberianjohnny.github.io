@@ -11,14 +11,14 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-.text-examples__block p, h1, h2, h3 {
-  width: 100%;
-  margin: 0 0 0 30px;
-  &:first-child {
-    max-width: 37px;
-    text-align: right;
-    margin: 0;
-    color: $darkshade25;
+  p, h1, h2, h3 {
+    width: 100%;
+    margin: 0 0 0 30px;
+    &:first-child {
+      max-width: 37px;
+      text-align: right;
+      margin: 0;
+      color: $darkshade25;
+    }
   }
 }

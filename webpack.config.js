@@ -41,9 +41,9 @@ module.exports = {
                       name: '[path][name].[ext]',
                       context: 'src',
                     }
-                  }
-                ]
-            }
+                  },
+                ],
+            },
         ],
     },
     plugins: [
@@ -55,8 +55,14 @@ module.exports = {
         new HtmlWebpackPlugin({
             inject: false,
             hash: true,
-            template: './src/index.pug',
-            filename: 'index.html'
+            template: './src/pages/ui_kit/colors&type.pug',
+            filename: '/pages/ui_kit/colors&type.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pages/ui_kit/cards.pug',
+            filename: '/pages/ui_kit/cards.html'
         }),
     ],
 };

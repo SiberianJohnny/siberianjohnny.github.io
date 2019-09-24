@@ -3,8 +3,8 @@ include ../utils/mixins
 doctype html
 html(lang="en")
  head
-   title= "Colors"
-   link(rel="stylesheet", href="main.css")
+   block title
+   link(rel="stylesheet", href="../../main.css")
  body
-  include ../modules/header/header
+  include ../modules/ui-kit__header/ui-kit__header
   block content
