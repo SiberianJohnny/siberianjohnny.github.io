@@ -1,13 +1,17 @@
-form(name="room__selection").room__selection
-      h1 Найдём номера под ваши пожелания
-      h3
-        label(for="arrival-date") Прибытие
-      input(type="date" id="arrival-date")
-      h3
-        label(for="date-of-departure") Выезд
-      input(type="date" id="date-of-departure")
-      h3
-        label(for="guests") Гости
-      input(type="number" id="guests" placeholder="Сколько гостей")
-      h3
-        input(type="submit" value="Подобрать номер")
+form(name="room__selection").room__selection-form
+  h1 Найдём номера под ваши пожелания
+  
+  .room__reservation--dates
+    h3
+      label(for="arrival-date") Прибытие
+    input(type="date" id="arrival-date")
+    h3
+      label(for="date-of-departure") Выезд
+    input(type="date" id="date-of-departure")
+
+  h3.guests
+    label(for="guests") Гости
+  input(type="number" id="guests" placeholder="Сколько гостей")
+
+  h3.submit-button
+    input(type="submit" value="Подобрать номер")

@@ -1,0 +1,40 @@
+form(name="room__reservation").room__reservation-form
+  .room__reservation--header
+    h2.room__number №888
+    p.room__class люкс
+    p.room__price-per-day 9 990р в сутки
+  
+  .room__reservation--dates
+    h3
+      label(for="arrival-date") Прибытие
+    input(type="date" id="arrival-date")
+    h3
+      label(for="date-of-departure") Выезд
+    input(type="date" id="date-of-departure")
+  
+  h3.guests
+    label(for="guests") Гости
+  input(type="number" id="guests" placeholder="Сколько гостей")
+  
+  .room__reservation--calc
+    p 9 990р x 4 суток
+    p 39 960р
+  
+  .room__reservation--calc.service-charge
+    p Сбор за услуги: скидка 2 179р 
+      a(href="#") i
+    p 0р
+  
+  .room__reservation--calc.additional-service-charge
+    p Сбор за дополнительные услуги 
+      a(href="#") i
+    p 300р
+  
+  .room__reservation--calc.total-price
+    h2 Итого
+    span
+    h2 38 081р
+  
+  h3.submit-button
+    input(type="submit" value="Забронировать")
+  

@@ -7,22 +7,64 @@
   <body>
 <header class="ui-kit__header"><img class="colorless-logo" src="../../../src/images/colorless-logo.svg" alt="logo"></header>
     <div class="cards__main">
-<form class="room__selection" name="room__selection">
+<form class="room__selection-form" name="room__selection">
   <h1>Найдём номера под ваши пожелания</h1>
-  <h3>
-    <label for="arrival-date">Прибытие</label>
-  </h3>
-  <input type="date" id="arrival-date">
-  <h3>
-    <label for="date-of-departure">Выезд</label>
-  </h3>
-  <input type="date" id="date-of-departure">
-  <h3>
+  <div class="room__reservation--dates">
+    <h3>
+      <label for="arrival-date">Прибытие</label>
+    </h3>
+    <input type="date" id="arrival-date">
+    <h3>
+      <label for="date-of-departure">Выезд</label>
+    </h3>
+    <input type="date" id="date-of-departure">
+  </div>
+  <h3 class="guests">
     <label for="guests">Гости</label>
   </h3>
   <input type="number" id="guests" placeholder="Сколько гостей">
-  <h3>
+  <h3 class="submit-button">
     <input type="submit" value="Подобрать номер">
+  </h3>
+</form>
+<form class="room__reservation-form" name="room__reservation">
+  <div class="room__reservation--header">
+    <h2 class="room__number">№888</h2>
+    <p class="room__class">люкс</p>
+    <p class="room__price-per-day">9 990р в сутки</p>
+  </div>
+  <div class="room__reservation--dates">
+    <h3>
+      <label for="arrival-date">Прибытие</label>
+    </h3>
+    <input type="date" id="arrival-date">
+    <h3>
+      <label for="date-of-departure">Выезд</label>
+    </h3>
+    <input type="date" id="date-of-departure">
+  </div>
+  <h3 class="guests">
+    <label for="guests">Гости</label>
+  </h3>
+  <input type="number" id="guests" placeholder="Сколько гостей">
+  <div class="room__reservation--calc">
+    <p>9 990р x 4 суток</p>
+    <p>39 960р</p>
+  </div>
+  <div class="room__reservation--calc service-charge">
+    <p>Сбор за услуги: скидка 2 179р <a href="#">i</a></p>
+    <p>0р</p>
+  </div>
+  <div class="room__reservation--calc additional-service-charge">
+    <p>Сбор за дополнительные услуги <a href="#">i</a></p>
+    <p>300р</p>
+  </div>
+  <div class="room__reservation--calc total-price">
+    <h2>Итого</h2><span></span>
+    <h2>38 081р</h2>
+  </div>
+  <h3 class="submit-button">
+    <input type="submit" value="Забронировать">
   </h3>
 </form>
     </div>
