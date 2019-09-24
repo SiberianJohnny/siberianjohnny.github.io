@@ -9,3 +9,8 @@ mixin text-examples__block(tagname, tag, text)
     .text-examples__block
         #{tag}= tagname
         #{tag}= text
+
+mixin calend__row( ...numbers)
+    tr
+        each number in numbers
+            td.calendar__day-of-the-month= number
