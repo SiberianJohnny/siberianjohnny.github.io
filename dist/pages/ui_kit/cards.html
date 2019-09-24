@@ -130,6 +130,40 @@
         <h3 class="clear-button">Очистить</h3>
         <h3 class="apply-button">Применить</h3>
       </div>
+<div class="registration__form">
+  <h1>Регистрация аккаунта</h1>
+  <form class="registration"> 
+    <input type="text" name="Name" placeholder="Имя">
+    <input type="text" name="Surname" placeholder="Фамилия">
+    <label for="gender-male">Мужчина</label>
+    <input type="radio" name="gender-male" value="Мужчина" checked>
+    <label for="gender-female">Женщина</label>
+    <input type="radio" name="gender-female" value="Женщина">
+    <h3>
+      <label for="bday">Дата рождения</label>
+    </h3>
+    <input type="date" name="bday">
+    <h3>
+      <label for="email">Данные для входа в сервис</label>
+    </h3>
+    <input type="email" name="email" placeholder="Email">
+    <input type="password" name="password" placeholder="Пароль">
+    <label for="offers">Получать спецпредложения</label>
+    <input type="checkbox" name="offers">
+    <input type="submit" value="Перейти к оплате">
+    <p>Уже есть аккаунт на Toxin</p>
+    <input type="submit" value="Войти">
+  </form>
+</div>
+<div class="login__form">
+  <form class="login"></form>
+  <h1>Войти</h1>
+  <input type="email" name="email" placeholder="Email">
+  <input type="password" name="password" placeholder="Пароль">
+  <input type="submit" value="Войти">
+  <p>Нет аккаунта на Toxin</p>
+  <input type="submit" value="Создать">
+</div>
     </div>
   </body>
 </html>

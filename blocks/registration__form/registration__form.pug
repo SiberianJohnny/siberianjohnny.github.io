@@ -1,0 +1,21 @@
+.registration__form
+  h1 Регистрация аккаунта
+  form.registration  
+    input(type="text" name="Name" placeholder="Имя")
+    input(type="text" name="Surname" placeholder="Фамилия")
+    label(for="gender-male") Мужчина
+    input(type="radio" name="gender-male" value="Мужчина" checked)
+    label(for="gender-female") Женщина
+    input(type="radio" name="gender-female" value="Женщина")
+    h3
+      label(for="bday") Дата рождения
+    input(type="date" name="bday")
+    h3
+      label(for="email") Данные для входа в сервис
+    input(type="email" name="email" placeholder="Email")
+    input(type="password" name="password" placeholder="Пароль")
+    label(for="offers") Получать спецпредложения
+    input(type="checkbox" name="offers")
+    input(type="submit" value="Перейти к оплате") 
+    p Уже есть аккаунт на Toxin
+    input(type="submit" value="Войти")
