@@ -1,0 +1,20 @@
+.dropdown-field__wrapper {
+  position: relative;
+  width: 320px;
+}
+.dropdown-field__wrapper i {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  right: 0px;
+  top: 5px;
+  pointer-events: none;
+}
+.dropdown-field__wrapper select {
+  -webkit-appearance: none;
+  -moz-appearance:none;
+  appearance:none;
+}

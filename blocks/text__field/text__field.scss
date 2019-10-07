@@ -1,0 +1,4 @@
+.input__field--long {
+  @extend %input__border;
+  @extend %input__size--long;
+}

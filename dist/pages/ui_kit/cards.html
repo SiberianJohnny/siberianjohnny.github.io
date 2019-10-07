@@ -9,22 +9,36 @@
     <div class="cards__main">
 <form class="room__selection-form" name="room__selection">
   <h1>Найдём номера под ваши пожелания</h1>
-  <div class="room__reservation--dates">
-    <h3>
-      <label for="arrival-date">Прибытие</label>
-    </h3>
-    <input type="date" id="arrival-date">
-    <h3>
-      <label for="date-of-departure">Выезд</label>
-    </h3>
-    <input type="date" id="date-of-departure">
+  <div class="room__selection--dates">
+    <div class="arrival-date__wrapper">
+      <h3>
+        <label for="arrival-date">Прибытие</label>
+      </h3>
+      <div class="arrival-date__input-wrapper">
+        <input class="input__field--short" type="date" id="arrival-date"><span class="material-icons arrow">keyboard_arrow_down</span>
+      </div>
+    </div>
+    <div class="date-of-departure__wrapper">
+      <h3>
+        <label for="date-of-departure">Выезд</label>
+      </h3>
+      <div class="date-of-departure__input-wrapper">
+        <input class="input__field--short" type="date" id="date-of-departure"><span></span>
+      </div>
+    </div>
   </div>
-  <h3 class="guests">
-    <label for="guests">Гости</label>
-  </h3>
-  <input type="number" id="guests" placeholder="Сколько гостей">
+  <div class="guests__wrapper">
+    <h3 class="guests">
+      <label for="guests">Гости</label>
+    </h3>
+    <select class="input__field--long" id="guests" placeholder="Сколько гостей">
+      <option>Двакита</option>
+      <option>Дети</option>
+      <option>Младенцы</option>
+    </select><span class="material-icons arrow">keyboard_arrow_down</span>
+  </div>
   <h3 class="submit-button">
-    <input type="submit" value="Подобрать номер">
+    <input class="input__button" type="submit" value="Подобрать номер">
   </h3>
 </form>
 <form class="room__reservation-form" name="room__reservation">

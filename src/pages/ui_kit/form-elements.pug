@@ -1,0 +1,9 @@
+extends ../../../layouts/main
+
+block title
+    title= "Form Elements"
+
+block content
+  include ../../../blocks/text__field/text__field.pug
+  +text__field-block("text__field", "Text field", "Email")
+  include ../../../blocks/dropdown/dropdown.pug

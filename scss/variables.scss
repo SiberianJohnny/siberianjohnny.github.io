@@ -1,0 +1,39 @@
+%form__border {
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+%input__border {
+  background: #FFFFFF;
+  border: 1px solid $darkshade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $darkshade25;
+    line-height: 18px;
+  }
+  &:hover, :focus {
+    border: 1px solid $darkshade50;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $darkshade75;
+    }
+  }
+}
+%input__size--short {
+  width: 150px;
+  height: 44px;
+}
+%input__size--long {
+  width: 320px;
+  height: 44px;
+}
+%line18 {
+  line-height: 18px;
+}
+%purple-gradient {
+  background: linear-gradient(180deg, $purple 0%, #8BA4F9 100%);
+  border-radius: 22px;
+}

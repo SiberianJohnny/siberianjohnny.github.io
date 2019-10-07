@@ -4,7 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        main: './src/index.js'
+        main: './src/index.js',
     },
     output: {
         filename: '[name].js',
@@ -63,6 +63,12 @@ module.exports = {
             hash: true,
             template: './src/pages/ui_kit/cards.pug',
             filename: '/pages/ui_kit/cards.html'
+        }),
+        new HtmlWebpackPlugin({
+            inject: false,
+            hash: true,
+            template: './src/pages/ui_kit/form-elements.pug',
+            filename: '/pages/ui_kit/form-elements.html'
         }),
     ],
 };

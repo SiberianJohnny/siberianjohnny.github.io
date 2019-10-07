@@ -1,3 +1,63 @@
 .room__selection-form {
-  border: 1px solid red;
+  @extend %form__border;
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  margin: 0;
+}
+.room__selection--dates {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.input__field--short, .input__field--long {
+  @extend %input__border;
+  @extend %line18;
+  position: relative;
+  padding-left: 15px;
+  margin-top: 5px;
+  &::-webkit-inner-spin-button { 
+    display: none; 
+  }
+}
+span:after {
+  font-family: 'Material Icons';
+  content: 'keyboard_arrow_down';
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+input[type="date"]::-webkit-calendar-picker-indicator::after {
+  font-family: 'Material Icons';
+  content: 'keyboard_arrow_down';
+  position: absolute;
+  right: 0;
+  color: $darkshade50;
+  opacity: 1;
+  width: 44px;
+  height: 44px;
+}
+.input__field--short {
+  @extend %input__size--short;
+  text-transform: uppercase;
+  color: $darkshade75;
+}
+.input__field--long {
+  @extend %input__size--long;
+}
+.guests__wrapper {
+  margin-bottom: 31px;
+}
+.input__button {
+  @extend %purple-gradient;
+  @extend %input__size--long;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
 }

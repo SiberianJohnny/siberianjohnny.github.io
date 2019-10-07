@@ -37,3 +37,14 @@
        url('../src/fonts/Montserrat/montserrat-v14-cyrillic_cyrillic-ext_latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../src/fonts/Montserrat/montserrat-v14-cyrillic_cyrillic-ext_latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
 }
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../src/fonts/material-design-icons/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../src/fonts/material-design-icons/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../src/fonts/material-design-icons/MaterialIcons-Regular.woff) format('woff'),
+    url(../src/fonts/material-design-icons/MaterialIcons-Regular.ttf) format('truetype');
+}
