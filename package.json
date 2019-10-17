@@ -29,6 +29,7 @@
     "webpack-material-design-icons": "^0.1.0"
   },
   "dependencies": {
+    "air-datepicker": "^2.2.3",
     "item-quantity-dropdown": "^2.0.2",
     "jquery": "^3.4.1",
     "material-icons": "^0.3.1"

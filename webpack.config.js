@@ -1,25 +1,32 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+
+const PATHS = {
+    source: path.join(__dirname, 'src'),
+    build: path.join(__dirname, 'dist')
+}
 
 module.exports = {
     entry: {
-        main: './src/index.js',
+        main: PATHS.source + '/index.js'
     },
     output: {
-        filename: '[name].js',
-        path: path.resolve(__dirname, 'dist'),
+        filename: 'js/[name].js',
+        path: PATHS.build,
     },
     module: {
         rules: [
             {
-                test: /\.scss$/,
+                test: /\.s*css$/,
                 use: [
                     MiniCssExtractPlugin.loader,
-                    {
-                        loader:'css-loader',
-                    },
-                    'resolve-url-loader',
+                    "css-loader",
+                    // {
+                    //     loader:'css-loader',
+                    // },
+                    // 'resolve-url-loader',
                     {
                         loader:'sass-loader',
                         options: {
@@ -52,23 +59,22 @@ module.exports = {
             chunkFilename: '[id].css',
             ignoreOrder: false,
         }),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+          }),
         new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/pages/ui_kit/colors&type.pug',
-            filename: '/pages/ui_kit/colors&type.html'
+            template: PATHS.source + '/pages/ui_kit/colors-type.pug',
+            filename: 'colors-type.html'
         }),
         new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/pages/ui_kit/cards.pug',
-            filename: '/pages/ui_kit/cards.html'
+            template: PATHS.source + '/pages/ui_kit/cards.pug',
+            filename: 'cards.html'
         }),
         new HtmlWebpackPlugin({
-            inject: false,
-            hash: true,
-            template: './src/pages/ui_kit/form-elements.pug',
-            filename: '/pages/ui_kit/form-elements.html'
+            template: PATHS.source + '/pages/ui_kit/form-elements.pug',
+            filename: 'form-elements.html'
         }),
     ],
 };

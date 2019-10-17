@@ -15,7 +15,7 @@
     color: $darkshade25;
     line-height: 18px;
   }
-  &:hover, :focus {
+  &:hover, &:focus {
     border: 1px solid $darkshade50;
     &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
       color: $darkshade75;
@@ -28,6 +28,10 @@
 }
 %input__size--long {
   width: 320px;
+  height: 44px;
+}
+%input__size--middle {
+  width: 266px;
   height: 44px;
 }
 %line18 {

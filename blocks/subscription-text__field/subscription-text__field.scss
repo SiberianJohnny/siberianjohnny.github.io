@@ -1,0 +1,22 @@
+.input__field--middle {
+  @extend %input__size--middle;
+  @extend %input__border;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.subscription-text__input-wrapper {
+  position: relative;
+  width: 266px;
+  i {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    right: 0px;
+    top: 5px;
+    pointer-events: none;
+    color: $darkshade50;
+  }
+}

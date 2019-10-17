@@ -1,0 +1,38 @@
+.toggle-switch__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: absolute;
+  &:checked + .toggle-switch__label:before {
+    left: 22px;
+  }
+}
+.toggle-switch__label {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid $purple;
+  border-radius: 10px;
+  transition: 350ms;
+  &:before {
+    position: absolute;
+    content: '';
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: 3px;
+    background: $primary-gradient;
+    border-radius: 10px;
+    transition: 250ms ease-in-out;  
+  }
+  &:after {
+    content: 'Получать спецпредложения';
+    position: absolute;
+    width: 210px;
+    left: 50px;
+    top: -2px;
+  }
+}

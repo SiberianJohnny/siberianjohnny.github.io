@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Elements</title>
+  <link href="main.css" rel="stylesheet"></head>
+  <body>
+<header class="ui-kit__header"><img class="colorless-logo" src="../src/images/colorless-logo.svg" alt="logo"></header>
+        <div class="text__field-wrapper">
+          <h3>
+            <label for="text__field">Text field</label>
+          </h3>
+          <input class="input__field--long" type="text" id="text__field" placeholder="Email">
+        </div>
+<div class="dropdown__wrapper">
+  <h3>
+    <label for="dropdown">Dropdown</label>
+  </h3>
+  <div class="dropdown-field__wrapper">
+    <select class="input__field--long" name="dropdown">
+      <option value="" disabled selected>Сколько гостей</option>
+      <option>0</option>
+      <option>3</option>
+      <option>10</option>
+    </select><i class="material-icons">keyboard_arrow_down</i>
+  </div>
+</div>
+<div class="masked-text__wrapper">
+  <h3>
+    <label for="masked-text">Masked text field</label>
+  </h3>
+  <input class="input__field--long datepicker-here" type="text" id="masked-text" placeholder="ДД.ММ.ГГГГ">
+</div>
+<div class="date-dropdown">
+  <div class="arrival-date-dropdown__wrapper">
+    <h3>
+      <label for="arrival-date">Date dropdown</label>
+    </h3>
+    <div class="date-dropdown__input-wrapper">
+      <input class="input__field--short datepicker-here" type="text" id="arrival-date" placeholder="ДД.ММ.ГГГГ"><i class="material-icons">keyboard_arrow_down</i>
+    </div>
+  </div>
+  <div class="date-of-departure-dropdown__wrapper">
+    <h3>
+      <label for="date-of-departure">Date dropdown</label>
+    </h3>
+    <div class="date-dropdown__input-wrapper">
+      <input class="input__field--short datepicker-here" type="text" id="date-of-departure" placeholder="ДД.ММ.ГГГГ"><i class="material-icons">keyboard_arrow_down</i>
+    </div>
+  </div>
+</div>
+<div class="filter-date__wrapper">
+  <h3>
+    <label for="filter-date">Filter date dropdown</label>
+  </h3>
+  <div class="filter-date__input-wrapper"> 
+    <input class="input__field--middle datepicker-here" type="text" id="filter-date" placeholder="ДД.ММ.ГГГГ - ДД.ММ.ГГГГ" data-range="true" data-multiple-dates-separator=" - "><i class="material-icons">keyboard_arrow_down</i>
+  </div>
+</div>
+<div class="subscription-text__wrapper">
+  <h3>
+    <label for="subscription-text">Subscription text field</label>
+  </h3>
+  <div class="subscription-text__input-wrapper">
+    <input class="input__field--middle" type="text" id="subscription-text" placeholder="Email"><i class="material-icons">keyboard_arrow_right</i>
+  </div>
+</div>
+    <div class="checkbox__buttons">
+      <h3>Checkbox buttons</h3>
+          <div class="checkbox__row-wrapper">
+            <input class="checkbox__field" type="checkbox" id="smoke">
+            <label class="checkbox__label" for="smoke">Можно курить</label>
+          </div>
+          <div class="checkbox__row-wrapper">
+            <input class="checkbox__field" type="checkbox" id="pets" checked>
+            <label class="checkbox__label" for="pets">Можно с питомцами</label>
+          </div>
+          <div class="checkbox__row-wrapper">
+            <input class="checkbox__field" type="checkbox" id="guests" checked>
+            <label class="checkbox__label" for="guests">Можно пригласить гостей (до 10 человек)</label>
+          </div>
+    </div>
+<div class="radio-buttons">
+  <h3>Radio buttons</h3>
+  <div class="radio-buttons__select-area">
+    <label class="container" for="gender1">Мужчина
+      <input class="radio-buttons__field" type="radio" name="gender" id="gender1" checked><span class="radio-buttons__checkmark"></span>
+    </label>
+    <label class="container" for="gender2">Женщина
+      <input class="radio-buttons__field" type="radio" name="gender" id="gender2"><span class="radio-buttons__checkmark"></span>
+    </label>
+  </div>
+</div>
+<div class="toggle-switch">
+  <h3>Toggle</h3>
+  <div class="toggle-switch__field">
+    <input class="toggle-switch__input" type="checkbox" id="toggle-switch">
+    <label class="toggle-switch__label" for="toggle-switch"></label>
+  </div>
+</div>
+    <div class="like-button">
+      <h3>like button</h3>
+<div class="like-button__wrapper">
+  <input class="like-button__input" type="checkbox" id="like-button">
+  <label class="like-button__label" for="like-button"></label><span class="like-button__counter"></span>
+</div>
+    </div>
+    <div class="rate-button">
+      <h3>rate button</h3>
+<div class="rating">
+  <div class="rating__field">
+    <input class="rating__control" type="radio" name="rating-star" id="rc1">
+    <input class="rating__control" type="radio" name="rating-star" id="rc2">
+    <input class="rating__control" type="radio" name="rating-star" id="rc3">
+    <input class="rating__control" type="radio" name="rating-star" id="rc4">
+    <input class="rating__control" type="radio" name="rating-star" id="rc5">
+    <label class="rating__item" for="rc1"><i class="material-icons star_border">star_border</i><i class="material-icons star">star</i></label>
+    <label class="rating__item" for="rc2"><i class="material-icons star_border">star_border</i><i class="material-icons star">star</i></label>
+    <label class="rating__item" for="rc3"><i class="material-icons star_border">star_border</i><i class="material-icons star">star</i></label>
+    <label class="rating__item" for="rc4"><i class="material-icons star_border">star_border</i><i class="material-icons star">star</i></label>
+    <label class="rating__item" for="rc5"><i class="material-icons star_border">star_border</i><i class="material-icons star">star</i></label>
+  </div>
+</div>
+    </div>
+  <script type="text/javascript" src="js/main.js"></script></body>
+</html>
