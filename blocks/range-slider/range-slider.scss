@@ -1,0 +1,60 @@
+.range-slider__wrapper {
+  width: 266px;
+}
+.irs-bar {
+  height: 6px !important;
+  background: $secondary-gradient;
+  border-radius: 3px;
+}
+.irs--flat .irs-handle>i:first-child {
+  top: 0 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 10px;
+  background: $secondary-gradient;
+  border: 2px solid #FFFFFF;
+}
+.irs-line {
+  width: 266px;
+  height: 6px !important;
+  background-color: #FFFFFF !important;
+  border: 1px solid $darkshade25;
+  border-radius: 3px;
+}
+.js-input-from {
+  text-align: right;
+  margin-right: 11px;
+}
+.js-input-to {
+  text-align: left;
+}
+.js-input-from, .js-input-to {
+  border: none;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkshade50;
+  max-width: 44px;
+}
+.range-slider__icon-money {
+  color: $darkshade50;
+  font-size: 12px;
+  position: absolute;
+  top: 5px;
+  right: 46px;
+  line-height: 15px;
+  &:before {
+    position: absolute;
+    content: '₽';
+    left: -7px;
+  }
+  &:after {
+    position: absolute;
+    content: '₽';
+    right: -46px;
+  }
+}
+.range-slider__numbers {
+  text-align: right;
+  position: relative;
+  height: 12px;
+}
