@@ -16,6 +16,12 @@ module.exports = {
         filename: 'js/[name].js',
         path: PATHS.build,
     },
+    devServer: {
+        publicPath: '/dist/',
+        contentBase: path.resolve (__dirname, "dist"),
+        watchContentBase: true,
+        compress: true
+    },
     module: {
         rules: [
             {
@@ -26,7 +32,7 @@ module.exports = {
                     // {
                     //     loader:'css-loader',
                     // },
-                    // 'resolve-url-loader',
+                    //'resolve-url-loader',
                     {
                         loader:'sass-loader',
                         options: {

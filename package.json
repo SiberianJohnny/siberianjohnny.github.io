@@ -33,6 +33,7 @@
     "ion-rangeslider": "^2.3.0",
     "item-quantity-dropdown": "^2.0.2",
     "jquery": "^3.4.1",
-    "material-icons": "^0.3.1"
+    "material-icons": "^0.3.1",
+    "simple-pagination": "^1.0.0"
   }
 }

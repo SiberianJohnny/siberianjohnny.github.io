@@ -1,0 +1,26 @@
+.default-button {
+  width: 320px;
+  position: relative;
+  height: 44px;
+  background: $primary-gradient;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+  border-radius: 22px;
+  &:before {
+    font-family: "Material icons";
+    content: '\e5c8';
+    position: absolute;
+    width: 44px;
+    font-size: 24px;
+    line-height: 24px;
+    right: 0;
+    top: 10px;
+  }
+}

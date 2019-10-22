@@ -1,0 +1,17 @@
+.borderless-button {
+  width: 61px;
+  height: 15px;
+  background: #FFFFFF;
+  text-transform: uppercase;
+  color: $purple;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    color: rgba(31, 32, 65, 0.5);
+  }
+}

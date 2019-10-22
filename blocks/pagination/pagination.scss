@@ -1,0 +1,36 @@
+.simple-pagination li.active {
+  background: $primary-gradient;
+  border-radius: 22px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+.light-theme a, .light-theme span {
+  color: $darkshade50;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.pagination__text {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 10px 0 0 6px;
+}
+
+.pagination__arrow {
+  font-size: 24px;
+  line-height: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding-top: 10px;
+  color: #FFFFFF;
+  background: $secondary-gradient;
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.pagination__elements {
+  display: flex;
+}
