@@ -11,6 +11,6 @@ import 'ion-rangeslider/js/ion.rangeSlider.js'
 import '../blocks/range-slider/range-slider'
 
 // Pagination
-import 'simple-pagination/jquery.simplePagination'
-import 'simple-pagination/simplePagination.css'
+import '../blocks/pagination/flaviusmatis-simplePagination.js-e32c66e/jquery.simplePagination'
+import '../blocks/pagination/flaviusmatis-simplePagination.js-e32c66e/simplePagination.css'
 import '../blocks/pagination/pagination'
