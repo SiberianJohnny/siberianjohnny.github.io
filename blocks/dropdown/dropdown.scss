@@ -1,21 +1,62 @@
-.dropdown-field__wrapper {
-  position: relative;
-  width: 320px;
+.dropdown__field-wrapper{
+  display: flex;
 }
-.dropdown-field__wrapper i {
-  position: absolute;
+.dropdown__field-wrapper i {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;
   height: 44px;
-  right: 0px;
-  top: 5px;
   pointer-events: none;
   color: $darkshade50;
 }
-.dropdown-field__wrapper select {
-  -webkit-appearance: none;
-  -moz-appearance:none;
-  appearance:none;
+
+.dropdown__field {
+  border: 1px solid $darkshade50;
+  border-radius: 2px 2px 0 0;
+  width: 266px;
+  height: 44px;
+}
+
+div.NCS.parent {
+  border: 1px solid $darkshade50;
+  border-top: none;
+}
+a.NCS.button {
+  border: 1px solid $darkshade25;
+  color: $darkshade50;
+}
+div.NCS.name, div.NCS.value {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: bold;
+  color: $darkshade100;
+  text-transform: uppercase;
+  align-self: center;
+  text-align: center;
+}
+div.NCS.value {
+  width: 30px;
+}
+div.NCS.category {
+  margin-bottom: 7px;
+  &:first-child {
+    margin: 7px 0 7px 0;
+  }
+}
+div.NCS.displayelement {
+  color: $darkshade75;
+  font-size: 14px;
+  line-height: 24px;
+}
+a.NCS.close {
+  font-size: 12;
+  line-height: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $purple;
+  margin: 20px 7xp 13px 0;
+  display: flex;
+  justify-content: flex-end;
 }
