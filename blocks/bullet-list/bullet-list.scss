@@ -1,0 +1,17 @@
+.bullet__row {
+  display: grid;
+  width: 260px;
+  grid-template-columns: 10px 1fr;
+}
+.bullet__mark {
+  width: 10px;
+  height: 10px;
+  background: $darkshade25;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+.bullet__item {
+  margin: 0 0 0 10px;
+  font-size: 14px;
+  line-height: 24px;
+}

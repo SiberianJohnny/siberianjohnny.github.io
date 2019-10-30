@@ -1,0 +1,31 @@
+.advantages__row {
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  width: 280px;
+  font-size: 14px;
+  line-height: 24px;
+  color: $darkshade75;
+  display: grid;
+  grid-template-columns: 58px 1fr;
+  grid-template-rows: 24px;
+}
+.advantages__icon {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  line-height: 41px;
+  background: -webkit- + $primary-gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0 10px 0 0;
+  padding-top: 3.5px;
+  grid-row: 1 / 2;
+}
+.advantages__header {
+  font-weight: bold;
+  grid-column: 2;
+  margin: 0;
+}
+.advantages__description {
+  grid-column: 2;
+  margin: 0;
+}

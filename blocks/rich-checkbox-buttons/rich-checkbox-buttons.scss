@@ -1,0 +1,54 @@
+.rich-checkboxes {
+  width: 266px;
+}
+.rich-checkbox__row-wrapper {
+  margin-top: 10px;
+  display: flex;
+}
+.rich-checkbox__field {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+.rich-checkbox__field + .rich-checkbox__label:before {
+  height: 20px;
+  width: 20px;
+  background: #FFFFFF;
+  border: 1px solid $darkshade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  position: relative; 
+}
+.rich-checkbox__field:checked + .rich-checkbox__label:before {
+  background: url(images\checkbox-arrow.svg) no-repeat 50%;
+}
+.rich-checkbox__label {
+  color: $darkshade50;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  grid-template-rows: 20px;
+  &:before {
+    margin-right: 10px;
+  }
+  & .rich-checkbox__header {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: bold;
+    color: $darkshade75;
+    margin: 0;
+    align-self: center;
+  }
+  & .rich-checkbox__description {
+    grid-column: 2;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 5px 0 0 0;
+  }
+}
+
