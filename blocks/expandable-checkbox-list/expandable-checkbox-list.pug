@@ -1,0 +1,18 @@
+mixin checkbox-button(name, text)
+  li.checkbox__row-wrapper
+    input.checkbox__field(type="checkbox" id=name)&attributes(attributes)
+    label.checkbox__label(for=name)= text
+
+.exbandable-checkbox
+  h3 Expandable checkbox list
+  input(type="checkbox" class="checkbox-list__button" checked)
+  i.material-icons.expandable-checkbox__arrow expand_less
+  ul.expandable-checkbox__list
+    +checkbox-button('breakfast', 'Завтрак')
+    +checkbox-button('table', 'Письменный стол')(checked)
+    +checkbox-button('feedingChair', 'Стул для кормления')(checked)
+    +checkbox-button('crib', 'Кроватка')(checled)
+    +checkbox-button('tv1', 'Телевизор')
+    +checkbox-button('shampoo1', 'Шампунь')
+    +checkbox-button('tv2', 'Телевизор')
+    +checkbox-button('shampoo2', 'Шампунь')
