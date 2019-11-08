@@ -1,6 +1,6 @@
 .advantages__row {
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
   width: 280px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 24px;
   color: $darkshade75;
@@ -28,4 +28,10 @@
 .advantages__description {
   grid-column: 2;
   margin: 0;
+}
+.advantages__underline {
+  height: 1px;
+  width: 280px;
+  margin-top: 17px;
+  background: rgba(31, 32, 65, 0.1);
 }

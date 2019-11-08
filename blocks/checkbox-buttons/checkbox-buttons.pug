@@ -4,7 +4,6 @@ mixin checkbox-button(name, text)
     label.checkbox__label(for=name)= text
 
 .checkbox__buttons
-  h3 Checkbox buttons
   +checkbox-button("smoke", "Можно курить")
   +checkbox-button("pets", "Можно с питомцами")(checked)
   +checkbox-button("guests", "Можно пригласить гостей (до 10 человек)")(checked)

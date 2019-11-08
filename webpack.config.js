@@ -2,6 +2,7 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
+//var nodeExternals = require('webpack-node-externals');
 
 const PATHS = {
     source: path.join(__dirname, 'src'),
@@ -9,6 +10,8 @@ const PATHS = {
 }
 
 module.exports = {
+    // target: 'node', // in order to ignore built-in modules like path, fs, etc.
+    // externals: [nodeExternals()], // in order to ignore all modules in node_modules folder
     entry: {
         main: PATHS.source + '/index.js'
     },
@@ -29,9 +32,6 @@ module.exports = {
                 use: [
                     MiniCssExtractPlugin.loader,
                     "css-loader",
-                    // {
-                    //     loader:'css-loader',
-                    // },
                     //'resolve-url-loader',
                     {
                         loader:'sass-loader',
@@ -46,13 +46,14 @@ module.exports = {
                 loader: 'pug-loader?pretty=true',
             },
             {
-                test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+                test: /\.(woff(2)?|ttf|eot|svg|png)(\?v=\d+\.\d+\.\d+)?$/,
                 use: [
                   {
                     loader: 'file-loader',
                     options: {
                       name: '[path][name].[ext]',
                       context: 'src',
+                      exclude: [/node_modules/],
                     }
                   },
                 ],

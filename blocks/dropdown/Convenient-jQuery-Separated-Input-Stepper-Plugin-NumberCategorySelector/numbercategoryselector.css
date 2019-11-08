@@ -6,7 +6,6 @@ div.NCS.parent {
     border-radius: 2px;
     overflow: hidden;
     min-width: 200px;
-    width: 266px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
@@ -35,6 +34,7 @@ div.NCS.display {
 div.NCS.inlinedisplay {
     height: 100%;
     width: 10000px;
+    cursor: pointer;
 }
 
 div.NCS.displayelement:before {

@@ -9,18 +9,29 @@
   height: 44px;
   pointer-events: none;
   color: $darkshade50;
+  position: absolute;
+  left: 276px;
+  cursor: pointer;
 }
 
 .dropdown__field {
-  border: 1px solid $darkshade50;
-  border-radius: 2px 2px 0 0;
-  width: 266px;
-  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid $darkshade25;
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $darkshade25;
+    line-height: 18px;
+  }
+  @extend %input__size--long;
+  cursor: pointer;
 }
 
 div.NCS.parent {
   border: 1px solid $darkshade50;
   border-top: none;
+  width: 320px;
 }
 a.NCS.button {
   border: 1px solid $darkshade25;
@@ -60,3 +71,12 @@ a.NCS.close {
   display: flex;
   justify-content: flex-end;
 }
+.dropdown__field {
+  &:hover, &:focus {
+    border: 1px solid $darkshade50;
+    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $darkshade75;
+    }
+  }
+}
+

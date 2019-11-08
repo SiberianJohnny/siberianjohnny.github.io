@@ -13,8 +13,9 @@
 @import "../blocks/login__form/login__form.scss";
 @import "../scss/variables.scss";
 @import "../src/fonts/material-design-icons/material-icons.css";
+
+// Form elements
 @import "../blocks/text__field/text__field.scss";
-@import "../node_modules/item-quantity-dropdown/lib/item-quantity-dropdown.min.css";
 @import "../blocks/dropdown/dropdown.scss";
 @import "../blocks/masked-text__field/masked-text__field.scss";
 @import "../blocks/date__dropdown/date__dropdown.scss";
@@ -35,3 +36,5 @@
 @import "../blocks/rich-checkbox-buttons/rich-checkbox-buttons.scss";
 @import "../blocks/bullet-list/bullet-list.scss";
 @import "../blocks/advantages/advantages.scss";
+@import "../blocks/comment/comment.scss";
+@import "../scss/form-elements.scss";

@@ -25,7 +25,7 @@
   position: relative; 
 }
 .rich-checkbox__field:checked + .rich-checkbox__label:before {
-  background: url(images\checkbox-arrow.svg) no-repeat 50%;
+  background: url(./images/checkbox-arrow.svg) no-repeat 50%;
 }
 .rich-checkbox__label {
   color: $darkshade50;

@@ -1,5 +1,6 @@
-mixin text__field-block(name, text, placeholder)
+mixin text__field-block(name, placeholder)
   div(class=name+ "-wrapper")
-    h3
-      label(for= name)= text
     input.input__field--long(type="text" id= name placeholder= placeholder)
+
+
++text__field-block("text__field", "Email")

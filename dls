@@ -1,0 +1,23 @@
+[33mcommit 96b89b1464b277f7a5bcdee6d9b8c03ed6900816[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;32mlist[m[33m)[m
+Author: Siberian Johnny <allidon93@gmail.com>
+Date:   Thu Nov 7 17:39:05 2019 +0700
+
+    Fixed paths for images and added more markup
+
+[33mcommit 5c8b97ee0699b4dcad1a2f84d938ee880a309bac[m
+Author: Siberian Johnny <allidon93@gmail.com>
+Date:   Thu Sep 19 19:10:21 2019 +0700
+
+    Complete header and color palette (need to change colors a little)
+
+[33mcommit 394c88f4871567679150bff0a7fa64dd64e2a340[m
+Author: Siberian Johnny <allidon93@gmail.com>
+Date:   Mon Sep 16 18:12:37 2019 +0700
+
+    Added logo icon block
+
+[33mcommit c8397c6c0f7b7c51ef7ebba8afcff614dc6acae1[m
+Author: Siberian Johnny <allidon93@gmail.com>
+Date:   Mon Sep 16 16:43:17 2019 +0700
+
+    Made html block for colors

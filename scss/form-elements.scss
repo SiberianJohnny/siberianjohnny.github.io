@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.form-elements {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 320px 260px 266px;
+  grid-template-rows: auto;
+  grid-gap: 126px 132px;
+  margin-left: 140px;
+}
+.column1, .column2, .column3 {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-gap: 20px;
+  margin-top: 65px;
+}
+.buttons__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.advantages__wrapper, .comment__wrapper {
+  margin-top: 40px;
+}

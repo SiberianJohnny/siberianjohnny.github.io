@@ -4,42 +4,62 @@ block title
     title= "Form Elements"
 
 block content
-  include ../../../blocks/text__field/text__field.pug
-  +text__field-block("text__field", "Text field", "Email")
-  .dropdown-title
-    h3 dropdown
-    include ../../../blocks/dropdown/dropdown.pug
-  include ../../../blocks/masked-text__field/masked-text__field.pug
-  include ../../../blocks/date__dropdown/date__dropdown.pug
-  include ../../../blocks/filter-date__dropdown/filter-date__dropdown.pug
-  include ../../../blocks/subscription-text__field/subscription-text__field.pug
-  include ../../../blocks/checkbox-buttons/checkbox-buttons.pug
-  include ../../../blocks/radio-buttons/radio-buttons.pug
-  include ../../../blocks/toggle-switch/toggle-switch.pug
-  .like-button
-    h3 like button
-    include ../../../blocks/like-button/like-button.pug
-  .rate-button
-    h3 rate button
-    include ../../../blocks/rate-button/rate-button.pug
-  .range-slider
-    h3 range slider
-    include ../../../blocks/range-slider/range-slider.pug
-  .buttons
-    h3 buttons
-    include ../../../blocks/buttons/filled-button/filled-button.pug
-    include ../../../blocks/buttons/bordered-button/bordered-button.pug
-    include ../../../blocks/buttons/borderless-button/borderless-button.pug
-    include ../../../blocks/buttons/default-button/default-button.pug
-  .pagination__field
-    h3 pagination
-    include ../../../blocks/pagination/pagination.pug
-  include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
-  .rich-checkbox-buttons
-    h3 Rich checkbox buttons
-    include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
-  .bullet-list
-    h3 Bullet list
-    include ../../../blocks/bullet-list/bullet-list.pug
-  .advantages
-    include ../../../blocks/advantages/advantages.pug
+  .form-elements
+    .column1
+      .text-field__wrapper
+        h3 Text field
+        include ../../../blocks/text__field/text__field.pug
+      .dropdown__wrapper
+        h3 dropdown
+        include ../../../blocks/dropdown/dropdown.pug
+      .masked-text__wrapper
+        h3 Masked text field
+        include ../../../blocks/masked-text__field/masked-text__field.pug
+      .date-dropdown__wrapper
+        include ../../../blocks/date__dropdown/date__dropdown.pug
+      .filter-date-dropdown__wrapper
+        h3 Filter date dropdown
+        include ../../../blocks/filter-date__dropdown/filter-date__dropdown.pug
+      .subscription-text__wrapper
+        h3 Subscription text field
+        include ../../../blocks/subscription-text__field/subscription-text__field.pug
+    .column2
+      .checkbox-buttons__wrapper
+        h3 Checkbox buttons
+        include ../../../blocks/checkbox-buttons/checkbox-buttons.pug
+      .radio-buttons__wrapper
+        h3 Radio buttons
+        include ../../../blocks/radio-buttons/radio-buttons.pug
+      .toggle-switch__wrapper
+        h3 Toggle
+        include ../../../blocks/toggle-switch/toggle-switch.pug
+      .like-button__wrapper
+        h3 like button
+        include ../../../blocks/like-button/like-button.pug
+      .rate-button__wrapper
+        h3 rate button
+        include ../../../blocks/rate-button/rate-button.pug
+    .column3
+      .range-slider__wrapper
+        h3 range slider
+        include ../../../blocks/range-slider/range-slider.pug
+      .buttons__wrapper
+        h3 buttons
+        include ../../../blocks/buttons/filled-button/filled-button.pug
+        include ../../../blocks/buttons/bordered-button/bordered-button.pug
+        include ../../../blocks/buttons/borderless-button/borderless-button.pug
+        include ../../../blocks/buttons/default-button/default-button.pug
+      .pagination-field__wrapper
+        h3 pagination
+        include ../../../blocks/pagination/pagination.pug
+    include ../../../blocks/expandable-checkbox-list/expandable-checkbox-list.pug
+    .rich-checkbox-buttons__wrapper
+      h3 Rich checkbox buttons
+      include ../../../blocks/rich-checkbox-buttons/rich-checkbox-buttons.pug
+    .bullet-list__wrapper
+      h3 Bullet list
+      include ../../../blocks/bullet-list/bullet-list.pug
+    .advantages__wrapper
+      include ../../../blocks/advantages/advantages.pug
+    .comment__wrapper
+      include ../../../blocks/comment/comment.pug

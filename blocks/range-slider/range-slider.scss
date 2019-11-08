@@ -5,6 +5,8 @@
   height: 6px !important;
   background: $secondary-gradient;
   border-radius: 3px;
+  top: 26.5px !important;
+
 }
 .irs--flat .irs-handle>i:first-child {
   top: 0 !important;
@@ -12,7 +14,11 @@
   height: 12px !important;
   border-radius: 10px;
   background: $secondary-gradient;
+  margin-left: -2px !important;
   border: 2px solid #FFFFFF;
+}
+.irs--flat .irs-line {
+  top: 26px !important;
 }
 .irs-line {
   width: 266px;
