@@ -1,13 +1,14 @@
-.date-dropdown
-  .arrival-date-dropdown__wrapper
-    h3
-      label(for="arrival-date") Date dropdown
-    .date-dropdown__input-wrapper
-      input.input__field--short.datepicker-here(type="text" id="arrival-date" placeholder="ДД.ММ.ГГГГ")
-      i.material-icons keyboard_arrow_down
-  .date-of-departure-dropdown__wrapper
-    h3
-      label(for="date-of-departure") Date dropdown
-    .date-dropdown__input-wrapper
-      input.input__field--short.datepicker-here(type="text" id="date-of-departure" placeholder="ДД.ММ.ГГГГ")
-      i.material-icons keyboard_arrow_down
+mixin dates(firstDateName, secondDateName)
+  .date-dropdown
+    .arrival-date-dropdown__wrapper
+      h3
+        label(for="arrival-date")= firstDateName
+      .date-dropdown__input-wrapper
+        input.date__dropdown--short.datepicker-here(type="text" id="arrival-date" placeholder="ДД.ММ.ГГГГ")
+        i.material-icons keyboard_arrow_down
+    .date-of-departure-dropdown__wrapper
+      h3
+        label(for="date-of-departure")= secondDateName
+      .date-dropdown__input-wrapper
+        input.date__dropdown--short.datepicker-here(type="text" id="date-of-departure" placeholder="ДД.ММ.ГГГГ")
+        i.material-icons keyboard_arrow_down

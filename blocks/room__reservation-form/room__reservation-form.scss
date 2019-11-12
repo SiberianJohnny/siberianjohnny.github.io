@@ -1,3 +1,91 @@
-.room__reservation-form {
-  border: 1px solid red;
+.room-reservation {
+  &__form {
+    @extend %form__border;
+    width: 380px;
+    padding: 40px 30px 30px 30px;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__number {
+    font-size: 20px;
+    line-height: 17px;
+    font-weight: 1100;
+    &:before {
+      content: '№ ';
+      font-size: 14px;
+      font-weight: bold;
+    }
+    &::after {
+      content: ' люкс';
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 15px;
+      text-transform: uppercase;
+      color: $purple;
+    }
+  }
+  &__price-per-day {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(31, 32, 65, 0.5);
+    &:after {
+      content: ' в сутки';
+      font-weight: normal;
+      font-size: 12px;
+      text-transform: lowercase;
+    }
+  }
+  &__dates {
+    margin-bottom: 20px;
+  }
+  &__guests {
+    margin-bottom: 20px;
+  }
+  &__guests-title {
+    margin-bottom: 5px;
+  }
+  &__calc {
+    display: grid;
+    grid-template-columns: 214px 20px 1fr;
+    margin-bottom: 10px;
+  }
+  &__info {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 50%;
+    text-decoration: none;
+    color: rgba(31, 32, 65, 0.25);
+    justify-content: center;
+    align-items: center;
+    margin-left: 3px;
+  }
+  &__button {
+    margin-top: 20px;
+  }
+}
+.room-reservation__calc p {
+  margin: 0;
+}
+.total-price {
+  margin-top: 30px;
+  &__title:after {
+    content: 
+    '.........................'
+    '.........................'
+    '.........................';
+    color: rgba(31, 32, 65, 0.25);
+    font-size: 15px;
+  }
+}
+.amount {
+  text-align: right;
+  grid-column: 3;
 }

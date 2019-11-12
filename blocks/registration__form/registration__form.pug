@@ -1,21 +1,21 @@
-.registration__form
-  h1 Регистрация аккаунта
-  form.registration  
-    input(type="text" name="Name" placeholder="Имя")
-    input(type="text" name="Surname" placeholder="Фамилия")
-    label(for="gender-male") Мужчина
-    input(type="radio" name="gender-male" value="Мужчина" checked)
-    label(for="gender-female") Женщина
-    input(type="radio" name="gender-female" value="Женщина")
-    h3
-      label(for="bday") Дата рождения
-    input(type="date" name="bday")
-    h3
-      label(for="email") Данные для входа в сервис
-    input(type="email" name="email" placeholder="Email")
-    input(type="password" name="password" placeholder="Пароль")
-    label(for="offers") Получать спецпредложения
-    input(type="checkbox" name="offers")
-    input(type="submit" value="Перейти к оплате") 
+form.registration-form
+  h1.registration-form__title Регистрация аккаунта
+  include ../text__field/text__field.pug
+  +text__field('name','Имя')
+  +text__field('secondName','Фамилия')
+  .registration-form__gender
+    include ../radio-buttons/radio-buttons.pug
+  .registration-form__date-of-birth
+    h3 Дата рождения
+    include ../masked-text__field/masked-text__field.pug
+  h3.registration-form__login-data-title Данные для входа в сервис
+  +text__field('email','Email')
+  +text__field('password','Пароль')
+  include ../toggle-switch/toggle-switch.pug
+  include ../buttons/default-button/default-button.pug
+  .registration-form__cta-button
+    +default-button('Перейти к оплате')
+  .registration-form__login
     p Уже есть аккаунт на Toxin
-    input(type="submit" value="Войти")
+    include ../buttons/bordered-button/bordered-button.pug
+    +bordered-button('Войти')

@@ -22,3 +22,15 @@
     color: $darkshade75;
   }
 }
+.date__dropdown--short {
+  @extend %input__border;
+  @extend %line18;
+  position: relative;
+  padding-left: 15px;
+  margin-top: 5px;
+}
+.date__dropdown--short {
+  @extend %input__size--short;
+  text-transform: uppercase;
+  color: $darkshade75;
+}

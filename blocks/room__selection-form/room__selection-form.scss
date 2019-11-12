@@ -1,43 +1,50 @@
-.room__selection-form {
-  @extend %form__border;
-  width: 380px;
-  padding: 40px 30px 30px 30px;
-  margin: 0;
+.room-selection {
+  &__title {
+    width: 320px;
+    font-weight: 800;
+  }
+  &__form {
+    @extend %form__border;
+    width: 380px;
+    padding: 40px 30px 30px 30px;
+    margin: 0;
+  }
+  &__dates {
+    margin: 20px 0;
+  }
+  &__guests {
+    margin-bottom: 30px;
+  }
 }
-.room__selection--dates {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
-}
-.input__field--short, .input__field--long {
-  @extend %input__border;
-  @extend %line18;
-  position: relative;
-  padding-left: 15px;
-  margin-top: 5px;
-}
-.input__field--short {
-  @extend %input__size--short;
-  text-transform: uppercase;
-  color: $darkshade75;
-}
-.input__field--long {
-  @extend %input__size--long;
-}
-.guests__wrapper {
-  margin-bottom: 31px;
-}
-.input__button {
-  @extend %purple-gradient;
-  @extend %input__size--long;
-  border: none;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  /* identical to box height */
+// .room__selection--dates {
+//   display: flex;
+//   justify-content: space-between;
+//   margin: 20px 0;
+// }
+// .input__field--long {
+//   @extend %input__border;
+//   @extend %line18;
+//   position: relative;
+//   padding-left: 15px;
+//   margin-top: 5px;
+// }
+// .input__field--long {
+//   @extend %input__size--long;
+// }
+// .guests__wrapper {
+//   margin-bottom: 31px;
+// }
+// .input__button {
+//   @extend %purple-gradient;
+//   @extend %input__size--long;
+//   border: none;
+//   font-weight: bold;
+//   font-size: 12px;
+//   line-height: 15px;
+//   /* identical to box height */
 
-  text-align: center;
-  text-transform: uppercase;
+//   text-align: center;
+//   text-transform: uppercase;
 
-  color: #FFFFFF;
-}
+//   color: #FFFFFF;
+// }

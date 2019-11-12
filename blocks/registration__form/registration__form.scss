@@ -1,3 +1,32 @@
-.registration__form {
-  border: 1px solid red;
+.registration-form {
+  @extend %form__border;
+  width: 380px;
+  padding: 40px 30px 30px 30px;
+  display: grid;
+  row-gap: 10px;
+  // Lul xD grid-template-rows: 30px 20px 44px 10px 44px 10px 24px 20px 15px 5px 44px 20px 15px 5px 44px 10px 44px 10px 24px 20px 44px 30px;
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__gender {
+    margin-bottom: 10px;
+  }
+  &__date-of-birth {
+    margin-bottom: 10px;
+    & h3 {
+      margin-bottom: 5px;
+    }
+  }
+  &__login-data-title {
+    margin-bottom: -5px;
+  }
+  &__cta-button {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  &__login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

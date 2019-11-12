@@ -1,8 +1,12 @@
-.login__form
-  form.login
-  h1 Войти
-  input(type="email" name="email" placeholder="Email")
-  input(type="password" name="password" placeholder="Пароль")
-  input(type="submit" value="Войти") 
-  p Нет аккаунта на Toxin
-  input(type="submit" value="Создать")
+form.login-form
+  h1.login-form__title Войти
+  include ../text__field/text__field.pug
+  .login-form__data
+    +text__field('loginEmail', 'Email')
+    +text__field('loginPassword', 'Пароль')
+  include ../buttons/default-button/default-button.pug
+  .login-form__enter-button
+    +default-button('Войти')
+  .login-form__create-account
+    p Нет аккаунта на Toxin?
+    +bordered-button('Создать')

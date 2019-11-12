@@ -1,5 +1,6 @@
 .dropdown__field-wrapper{
   display: flex;
+  width: 320px;
 }
 .dropdown__field-wrapper i {
   display: flex;
@@ -10,7 +11,7 @@
   pointer-events: none;
   color: $darkshade50;
   position: absolute;
-  left: 276px;
+  left: 310px;
   cursor: pointer;
 }
 

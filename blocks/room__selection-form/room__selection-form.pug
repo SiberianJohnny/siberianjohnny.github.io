@@ -1,28 +1,14 @@
-form(name="room__selection").room__selection-form
-  h1 Найдём номера под ваши пожелания
+form(name="room-selection").room-selection__form
+  h1.room-selection__title Найдём номера под ваши пожелания
   
-  .room__selection--dates
-    .arrival-date__wrapper
-      h3
-        label(for="arrival-date") Прибытие
-      .arrival-date__input-wrapper
-        input.input__field--short(type="date" id="arrival-date")
-        i.material-icons keyboard_arrow_down
-    .date-of-departure__wrapper
-      h3
-        label(for="date-of-departure") Выезд
-      .date-of-departure__input-wrapper
-        input.input__field--short(type="date" id="date-of-departure")
-        i.material-icons keyboard_arrow_down
+  .room-selection__dates
+   include ../date__dropdown/date__dropdown.pug
+   +dates('Прибытие', 'Выезд')
   
-  .guests__wrapper
+  .room-selection__guests
     h3.guests
       label(for="guests") Гости
-    select.input__field--long(id="guests" placeholder="Сколько гостей")
-      option Двакита
-      option Дети
-      option Младенцы
-    span.material-icons.arrow keyboard_arrow_down
+      include ../dropdown/dropdown.pug
 
-  h3.submit-button
-    input.input__button(type="submit" value="Подобрать номер")
+  .room-selection__button
+    include ../buttons/default-button/default-button.pug
