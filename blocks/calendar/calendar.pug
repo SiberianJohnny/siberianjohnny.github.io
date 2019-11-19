@@ -1,21 +1,6 @@
-table.calendar
-  caption 
-    h2.calendar__month Август 2019
-  tr.calendar__day-of-the-week
-    th Пн
-    th Вт
-    th Ср
-    th Чт
-    th Пт
-    th Сб
-    th Вс
-  +calend__row(29,30,31,1,2,3,4)
-  +calend__row(5,6,7,8,9,10,11)
-  +calend__row(12,13,14,15,16,17,18)
-  +calend__row(19,20,21,22,23,24,25)
-  +calend__row(26,27,28,29,30,31,1)
-
-.calendar__buttons--wrapper
-  h3.clear-button Очистить
-  h3.apply-button Применить
-
+.calendar
+  .datepicker-here
+include ../buttons/borderless-button/borderless-button.pug
+.calendar__buttons
+  +borderless-button('Очистить')(class="calendar__clear-button")
+  +borderless-button('Применить')(class="calendar__apply-button")

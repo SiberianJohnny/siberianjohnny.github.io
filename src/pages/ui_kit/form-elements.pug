@@ -19,6 +19,7 @@ block content
       .date-dropdown__wrapper
         include ../../../blocks/date__dropdown/date__dropdown.pug
         +dates('Date dropdown','Date dropdown')
+        
       .filter-date-dropdown__wrapper
         h3 Filter date dropdown
         include ../../../blocks/filter-date__dropdown/filter-date__dropdown.pug
@@ -53,6 +54,10 @@ block content
         +bordered-button('Click me')
         include ../../../blocks/buttons/borderless-button/borderless-button.pug
         +borderless-button('Click me')
+        .calendar__buttons
+          +borderless-button('Очистить')(class="calendar__clear-button")
+          +borderless-button('Применить')(class="calendar__apply-button")
+
         include ../../../blocks/buttons/default-button/default-button.pug
         +default-button('Перейти к оплате')
       .pagination-field__wrapper

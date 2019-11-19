@@ -5,8 +5,15 @@ block title
 
 block content
   .cards__main
-    include ../../../blocks/room__selection-form/room__selection-form
-    include ../../../blocks/registration__form/registration__form
-    include ../../../blocks/room__reservation-form/room__reservation-form
-    include ../../../blocks/login__form/login__form
-    include ../../../blocks/calendar/calendar
+    .cards__column-1
+      .cards__selection-form
+        include ../../../blocks/room__selection-form/room__selection-form
+      include ../../../blocks/registration__form/registration__form
+    .cards__column-2
+      .cards__reservation-form
+        include ../../../blocks/room__reservation-form/room__reservation-form
+      include ../../../blocks/login__form/login__form
+    .cards__column-3
+      .cards__calendar
+        include ../../../blocks/calendar/calendar
+      include ../../../blocks/room__card/room__card.pug
