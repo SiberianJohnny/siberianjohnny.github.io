@@ -25,3 +25,9 @@ import '../blocks/dropdown/dropdown'
 import '../blocks/room__card/room__card'
 import '../src/images/room__image1.png'
 import '../src/images/room__image2.png'
+
+// Logo
+import '../src/images/Logo.svg'
+
+// Nav bar mobile menu
+import '../modules/nav-bar/nav-bar.js'

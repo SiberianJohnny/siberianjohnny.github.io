@@ -83,5 +83,9 @@ module.exports = {
             template: PATHS.source + '/pages/ui_kit/form-elements.pug',
             filename: 'form-elements.html'
         }),
+        new HtmlWebpackPlugin({
+            template: PATHS.source + '/pages/ui_kit/headers-and-footers.pug',
+            filename: 'headers-and-footers.html'
+        }),
     ],
 };

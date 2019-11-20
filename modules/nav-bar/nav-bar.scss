@@ -1,0 +1,80 @@
+.header__button {
+  width: fit-content;
+  height: 34px;
+  padding: 9px 20px 10px 20px;
+}
+.main-header {
+  min-height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.nav-wrapper {
+  max-width: 1160px;
+  min-height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  &__item {
+    margin-right: 30px;
+    align-self: center;
+    & a {
+      text-decoration: none;
+      color: $darkshade50;
+      line-height: 17px;
+      white-space: nowrap;
+    }
+  }
+  &__button {
+    color: $darkshade50;
+    line-height: 17px;
+    font-weight: bold;
+    display: none;
+    cursor: pointer;
+  }
+  &__item--expandable {
+    position: relative;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  &__item--expandable:after {
+    font-family: 'Material icons';
+    content: '\e5cf';
+    color: $darkshade50;
+    font-size: 24px;
+    line-height: 20px;
+    // margin-left: -30px;
+    align-self: center;
+  }
+  & > .bordered-button {
+    margin-right: 20px;
+  }
+}
+.hren {
+  display: none;
+}
+
+@media screen and (max-width: 880px) {
+  .menu {
+    & ul {
+      display: none;
+    }
+    &__button {
+      display: block;
+    }
+    &__item {
+      display: block;
+    }
+  }
+}

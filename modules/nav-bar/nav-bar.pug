@@ -1,0 +1,23 @@
+mixin menu-item(itemName)
+  li.menu__item&attributes(attributes)
+    a(href="#")= itemName
+
+header.main-header
+  .nav-wrapper
+    img(src="./images/Logo.svg", alt="logo").menu__logo
+    
+    nav.menu
+      a.menu__button Menu
+      ul
+        +menu-item('Home')
+        +menu-item('About Us')
+        +menu-item('Services')(class="menu__item--expandable")
+        +menu-item('Careers')
+        +menu-item('News')
+        +menu-item('Documentation')
+      include ../../blocks/buttons/bordered-button/bordered-button.pug
+      +bordered-button('Login')(class="header__button")
+      include ../../blocks/buttons/filled-button/filled-button.pug
+      +filled-button('Register')(class="header__button")
+.hren
+  include ../../blocks/dropdown/dropdown.pug
