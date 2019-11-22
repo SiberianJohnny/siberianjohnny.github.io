@@ -61,20 +61,47 @@
     margin-right: 20px;
   }
 }
+
 .hren {
   display: none;
 }
-
+@media screen and (max-width: 1200px) {
+  .nav-wrapper {
+    margin: 0 5%;
+  }
+  .menu > .bordered-button {
+    margin-right: 5px;
+  }
+  .header__button {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 @media screen and (max-width: 880px) {
+  .nav-wrapper {
+    position: relative;
+  }
   .menu {
     & ul {
       display: none;
+      position: absolute;
+      top: 52px;
+      background: #FFFFFF;
+      text-align: center;
+      border-radius: 0 0 2px 2px;
+      left: calc(100%/2 - 87px);
     }
     &__button {
       display: block;
     }
     &__item {
       display: block;
+      margin: 10px 10px;
+      border-bottom: 1px solid $purple;
+      &--expandable:after {
+        position: absolute;
+        bottom: 2px;
+      }
     }
   }
 }

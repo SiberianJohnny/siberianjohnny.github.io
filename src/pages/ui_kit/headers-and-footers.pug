@@ -4,4 +4,10 @@ block title
   title= "Headers & Footers"
 
 block content
-  include ../../../modules/nav-bar/nav-bar.pug
+  .nav-bar
+    include ../../../modules/nav-bar/nav-bar.pug
+  .nav-bar--logged-in
+    include ../../../modules/nav-bar--logged/nav-bar--logged.pug
+  .footer-widgets-and-copyright-bar
+    include ../../../modules/footer-widgets/footer-widgets.pug
+    include ../../../modules/copyright-bar/copyright-bar.pug
