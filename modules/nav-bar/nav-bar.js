@@ -1,6 +1,6 @@
 $(function() {
   $('.menu__button').click(function() {
-      $('.menu ul').slideToggle(500);
+    $(this).next('.menu').find('ul').slideToggle(500);
   });
   $(window).resize(function() {
     if ($(window).width() > 500) {
